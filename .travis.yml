@@ -1,4 +1,5 @@
 language: generic
+sudo: required
 os: linux
 
 services:
@@ -9,7 +10,7 @@ notifications:
     - "info@valentineus.link"
 
 before_deploy:
-  - /bin/sh build.sh
+  - sudo /bin/sh build.sh
 
 deploy:
   - provider: releases
