@@ -21,7 +21,7 @@ cd ./"$MEDNAFEN"
 
 # Build the package
 dh_make --yes --single --email "info@valentineus.link" --copyright "gpl3" --file ../"$MEDNAFEN.tar.xz"
-dpkg-buildpackage --compression=bzip2
+dpkg-buildpackage
 
 # End of work
 exit 0
