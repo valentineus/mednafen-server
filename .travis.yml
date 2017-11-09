@@ -1,0 +1,22 @@
+language: generic
+os: linux
+
+services:
+  - docker
+
+notifications:
+  email:
+    - "info@valentineus.link"
+
+before_deploy:
+  - /bin/sh build.sh
+
+deploy:
+  - provider: releases
+    skip_cleanup: true
+    file_glob: true
+    file: "mednafen-server_*"
+    email: "info@valentineus.link"
+    api_key: $GITHUB_PROJECT_TOKEN
+    on:
+      tags: true
