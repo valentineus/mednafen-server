@@ -1,5 +1,6 @@
 # Mednafen Server for GNU/Debian
 
+[![GitHub Release](https://img.shields.io/github/release/valentineus/mednafen-server.svg)](https://github.com/valentineus/mednafen-server/releases)
 [![Build Status](https://travis-ci.org/valentineus/mednafen-server.svg?branch=master)](https://travis-ci.org/valentineus/mednafen-server)
 
 Automatic build and deployment of the package `mednafen-server`.
