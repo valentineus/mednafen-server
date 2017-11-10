@@ -1,4 +1,4 @@
-FROM "debian:stable-slim"
+FROM debian:stable-slim
 MAINTAINER "Valentin Popov <info@valentineus.link>"
 
 # Install the application
