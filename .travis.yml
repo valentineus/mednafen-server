@@ -21,7 +21,10 @@ deploy:
   - provider: releases
     skip_cleanup: true
     file_glob: true
-    file: "mednafen-server_*"
+    file:
+      - "mednafen-server_*.dsc"
+      - "mednafen-server_*.changes"
+      - "mednafen-server_*.deb"
     email: "info@valentineus.link"
     api_key: $GITHUB_PROJECT_TOKEN
     on:
