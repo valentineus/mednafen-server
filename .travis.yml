@@ -12,6 +12,11 @@ notifications:
 before_deploy:
   - sudo /bin/sh build.sh
 
+after_deploy:
+  - docker login --username "$DOCKER_USER" --password "$DOCKER_PASSWORD"
+  - docker build --tag valentineus/mednafen-server ./
+  - docker push valentineus/mednafen-server
+
 deploy:
   - provider: releases
     skip_cleanup: true
